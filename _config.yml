@@ -29,6 +29,16 @@ theme: minima
 plugins:
   - jekyll-feed
 
+viewsource:
+  enabled: true                      # Default: true
+  debug: true                        # Show additional messages during run; default: false
+  #collection: pages, "articles"     # Which collections to paginate; default: pages and posts
+  collections:                       # Ditto, just a different way of writing it
+    - pages                          # Quotes are optional if collection names are obviously strings
+    - posts
+    - articles
+  options: pretty                    # Options that normally go in a doc's front matter
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
